@@ -5,5 +5,5 @@ import react from "@vitejs/plugin-react";
 // https://storage.googleapis.com/<bucket>/index.html and on a custom domain.
 export default defineConfig({
   plugins: [react()],
-  base: "./",
+  base: "/argomind-website/",
 });
