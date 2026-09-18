@@ -482,6 +482,7 @@ p { margin: 0; }
 .cards { display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); }
 .cards--2 { grid-template-columns: repeat(2, 1fr); }
 .cards--4 { grid-template-columns: repeat(4, 1fr); }
+.cards--6 { grid-template-columns: repeat(6, 1fr); }
 .card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; position: relative; transition: border-color .3s, transform .4s var(--ease); }
 .section--white .card { background: var(--paper); }
 .card:hover { border-color: #b9c9e2; }
@@ -495,8 +496,8 @@ p { margin: 0; }
 .on-dark .card { background: var(--navy-2); border-color: var(--line-dark); }
 .on-dark .card p { color: #aab6cc; }
 .on-dark .card__icon { background: rgba(21,96,245,.2); color: #8fb4ff; }
-@media (max-width: 1000px) { .cards, .cards--4 { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 620px) { .cards, .cards--2, .cards--4 { grid-template-columns: 1fr; } }
+@media (max-width: 1000px) { .cards, .cards--4, .cards--6 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .cards, .cards--2, .cards--4, .cards--6 { grid-template-columns: 1fr; } }
 
 /* Check lists */
 .checks li { display: flex; gap: 12px; align-items: flex-start; padding: 6px 0; }
@@ -699,3 +700,4 @@ table.t { width: 100%; border-collapse: collapse; font-size: .96rem; min-width: 
 /* React port additions */
 .header__login { background: none; border: 0; color: inherit; padding: 0; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+

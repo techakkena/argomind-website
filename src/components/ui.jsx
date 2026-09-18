@@ -30,6 +30,9 @@ const ICONS = {
   bug: <><rect x="7" y="8" width="10" height="12" rx="5" /><path d="M12 8V5M9 5.5 8 3.5M15 5.5l1-2M3 13h4M17 13h4M4 19l3-2M20 19l-3-2M4 7l3 2M20 7l-3 2" /></>,
   rocket: <><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2M9 15l-3-3c1-4 5-9 12-9 0 7-5 11-9 12z" /><circle cx="14.5" cy="9.5" r="1.5" /></>,
   grad: <><path d="M3 6.5 12 3l9 3.5-9 3.5z" /><path d="M6.5 8.5v5c0 1.8 2.5 3.5 5.5 3.5s5.5-1.7 5.5-3.5v-5M21 6.5V12" /></>,
+  video: <><rect x="3" y="5" width="13" height="14" rx="2" /><path d="M16 9l5-3v12l-5-3z" /></>,
+  notes: <><rect x="5" y="3" width="14" height="18" rx="2" /><path d="M9 8h6" /><path d="M9 12h6" /><path d="M9 16h4" /></>,
+  pdf: <><path d="M6 3h8l4 4v14H6z" /><path d="M14 3v5h5" /><path d="M8 13h8" /><path d="M8 17h6" /></>,
 };
 
 export function Icon({ name }) {
@@ -112,7 +115,7 @@ export function Checks({ items, cols = false }) {
 
 /** items: [{ icon, title, text, extra? }] */
 export function Cards({ items, cols = 3, numbered = false }) {
-  const cls = { 2: "cards cards--2", 3: "cards", 4: "cards cards--4" }[cols];
+  const cls = { 2: "cards cards--2", 3: "cards", 4: "cards cards--4",6: "cards cards--6"}[cols];
   return (
     <div className={cls}>
       {items.map((it, i) => (
