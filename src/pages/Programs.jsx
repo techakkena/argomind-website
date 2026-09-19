@@ -58,16 +58,16 @@ export default function Programs() {
             <p><Strong>Learn it properly. Practice it on real work. Walk into your interview ready.</Strong></p>
           </div>
           <Callout
-          small={
-            <>
-              Candidate Portal Architecture:
-              <br />
-              Candidate Portal → Learning - Jobs - Dashboard ↓ Backend APIs → Authentication - AI - Job Aggregation → PostgreSQL → AWS/Azure Cloud
-            </>
-          }
-        >
-          Build an AI-powered Career Acceleration Platform that prepares international students and fresh graduates for real IT jobs in one platform.
-        </Callout>
+            small={
+              <>
+                <div>Candidate Portal → Learning - Jobs - Dashboard</div>
+                <div style={{ textAlign: "left" }}>↓</div>
+                <div>Backend APIs → Authentication - AI - Job Aggregation → PostgreSQL → AWS/Azure Cloud</div>
+              </>
+            }
+          >
+            Build an AI-powered Career Acceleration Platform that prepares international students and fresh graduates for real IT jobs in one platform.
+          </Callout>
         </div>
       </Section>
 
@@ -89,7 +89,7 @@ export default function Programs() {
       </Section>
 
       <Section className="section--white">
-        <Head variant="solo" eyebrow="The four phases" title="One path in every track" />
+        <Head variant="solo" eyebrow="The Eight phases" title="One path in every track" />
         <Steps items={[
           ["Phase-1:Learn → Build → Deploy", "From your first lesson to production, all in one phase.Learn the concepts, practice code live in the compiler, debug real failures, commit through GitHub for review, and deploy your work to a live environment — a complete build cycle, not just a lesson."],
           ["Phase 2: Real-Time Projects & Release", "From working code to a shipped product.Join a live project with real tasks and deadlines, test it the way a QA team would, fix what breaks, and release it — proof you can deliver, not just build."],
