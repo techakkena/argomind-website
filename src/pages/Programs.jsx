@@ -62,7 +62,7 @@ export default function Programs() {
               <>
                 <div>Candidate Portal → Learning - Jobs - Dashboard</div>
                 <div style={{ textAlign: "left" }}>↓</div>
-                <div>Backend APIs → Authentication - AI - Job Aggregation → PostgreSQL → AWS/Azure Cloud</div>
+                <div>Backend APIs → Authentication - AI - Job Aggregation <div style={{ textAlign: "left" }}>↓</div>PostgreSQL → AWS/Azure Cloud</div>
               </>
             }
           >
