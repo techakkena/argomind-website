@@ -50,62 +50,24 @@ export default function Programs() {
       />
 
       <Section id="path">
-        <div className="split-2"  style={{ gridTemplateColumns: "0.85fr 1.15fr" }}>
+        <div className="split-2">
           <div className="copy">
             <Tag>Why it's different</Tag>
             <Split>A certificate alone doesn't tell employers what you can do</Split>
             <p>You complete a course and receive a certificate, then build tutorial projects before applying. Months go by, and the certificate makes little difference because employers can't tell what it really signifies.</p>
             <p><Strong>Learn it properly. Practice it on real work. Walk into your interview ready.</Strong></p>
           </div>
-          <Callout>
-            <div style={{ textAlign: "center" }}>
-              <small>Vision</small>
-            </div>
-
-            <p style={{ fontSize: "1.05rem", lineHeight: "1.4", marginBottom: "10px" }}>
-              Build an AI-powered Career Acceleration Platform that prepares
-              international students and fresh graduates for real IT jobs in one
-              platform.
-            </p>
-
-            <div
-                style={{
-                  marginTop: "8px",
-                  textAlign: "center",
-                  lineHeight: "0.50",
-                }}
-              >
-                <div>
-                  <small>
-                    Candidate Portal → Learning - Job Portal - Dashboard
-                  </small>
-                </div>
-
-                <div>
-                  <small>↓</small>
-                </div>
-
-                <div>
-                  <small>Backend APIs</small>
-                </div>
-
-                <div>
-                  <small>↓</small>
-                </div>
-
-                <div>
-                  <small>
-                    Authentication - AI Services - Job Aggregator
-                    {" → "}
-                    PostgreSQL Database
-                  </small>
-                    <div>
-                  <small>↓</small>
-                    </div>
-                  <small>AWS / Azure Cloud</small>
-                </div>
-              </div>
-          </Callout>
+          <Callout
+          small={
+            <>
+              Candidate Portal Architecture:
+              <br />
+              Candidate Portal → Learning - Jobs - Dashboard ↓ Backend APIs → Authentication - AI - Job Aggregation → PostgreSQL → AWS/Azure Cloud
+            </>
+          }
+        >
+          Build an AI-powered Career Acceleration Platform that prepares international students and fresh graduates for real IT jobs in one platform.
+        </Callout>
         </div>
       </Section>
 
